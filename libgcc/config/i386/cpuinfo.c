@@ -504,7 +504,9 @@ __cpu_indicator_init (void)
   return 0;
 }
 
+#if 0
 #if defined SHARED && defined USE_ELF_SYMVER
 __asm__ (".symver __cpu_indicator_init, __cpu_indicator_init@GCC_4.8.0");
 __asm__ (".symver __cpu_model, __cpu_model@GCC_4.8.0");
+#endif
 #endif
